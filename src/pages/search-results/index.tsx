@@ -42,7 +42,7 @@ export default function SearchResultsPage() {
                             (selectedTab === "track" ? " active" : "")
                         }
                     >
-                        <span>Tracks</span>
+                        <span className="mobile-only">Tracks</span>
                     </button>
                     <button
                         title="Artists"
@@ -52,7 +52,7 @@ export default function SearchResultsPage() {
                             (selectedTab === "artist" ? " active" : "")
                         }
                     >
-                        <span>Artists</span>
+                        <span className="mobile-only">Artists</span>
                     </button>
                     <button
                         title="Albums"
@@ -62,7 +62,7 @@ export default function SearchResultsPage() {
                             (selectedTab === "album" ? " active" : "")
                         }
                     >
-                        <span>Albums</span>
+                        <span className="mobile-only">Albums</span>
                     </button>
                 </div>
                 <div className="tab-content">

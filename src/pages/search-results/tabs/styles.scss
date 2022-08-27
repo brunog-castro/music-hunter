@@ -80,23 +80,22 @@
         padding-right: 5px;
 
         .result-header {
-            top: 0px;
-            right: 20px;
+            top: 20px;
+            right: 10px;
             text-align: right;
             user-select: none;
             position: absolute;
             pointer-events: none;
     
             .title {
-                font-size: 68px;
-                color: rgba(0, 0, 0, .1);
+                display: none;
             }
     
             .subtext {
                 font-size: 16px;
                 margin-top: -10px;
                 margin-right: 5px;
-                color: rgba(0, 0, 0, .4);
+                color: rgba(0, 0, 0, .2);
             }
         }
 

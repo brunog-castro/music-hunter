@@ -55,8 +55,12 @@
         display: none;
     }
 
-    .mobile-only {
-        display: block;
+    .main-template {
+        .body {
+            .mobile-only {
+                display: block;
+            }
+        }
     }
 }
 
