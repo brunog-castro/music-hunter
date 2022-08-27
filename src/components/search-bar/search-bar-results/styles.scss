@@ -66,8 +66,26 @@
         justify-content: center;
 
         .title {
+            display: flex;
             font-size: 18px;
             font-weight: 900;
+            align-items: center;
+
+            span {
+                bottom: 0;
+                width: 18px;
+                height: 19px;
+                color: #fff;
+                cursor: default;
+                font-size: 10px;
+                margin-left: 5px;
+                font-weight: bold;
+                border-radius: 5px;
+                align-items: center;
+                display: inline-flex;
+                justify-content: center;
+                background-color: #c43410;
+            }
         }
     }
 }

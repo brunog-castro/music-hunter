@@ -5,7 +5,9 @@
 
     .header-info {
         display: flex;
+        position: relative;
         align-items: center;
+        padding-right: 25px;
 
         img {
             width: 170px;
@@ -26,6 +28,21 @@
             .additional-info {
                 font-size: 16px;
                 margin-top: 20px;
+            }
+
+            .warning {
+                bottom: 0;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                color: #fff;
+                cursor: default;
+                font-weight: bold;
+                position: absolute;
+                align-items: center;
+                border-radius: 8px;
+                justify-content: center;
+                background-color: #c43410;
             }
         }
     }
@@ -137,8 +154,6 @@
         padding: 150px 10px 30px 20px;
 
         .header-info {
-            padding-right: 25px;
-
             img {
                 width: 80px;
             }

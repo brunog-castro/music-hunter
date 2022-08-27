@@ -67,6 +67,10 @@ export default function TracksTab(props: PropTypes) {
                             title={track.name}
                             onClick={() => onItemClick(track)}
                             thumbnail={track.album?.images?.[0]?.url}
+                            titleExtras={track.explicit 
+                                ? "Explicit Content"
+                                : undefined
+                            }
                             subtitle={track.artists?.map(a => a.name).join(", ")}
                         />
                     )}

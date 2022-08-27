@@ -22,6 +22,9 @@ export default function TrackSidebar(props: PropTypes) {
                     <div className="subtitle">
                         by {props.track.artists.map(a => a.name).join(", ")}
                     </div>
+                    {props.track.explicit &&
+                        <span className="warning" title="Explicit Content">E</span>
+                    }
                 </div>
             </div>
             <div className="detailed-data">
