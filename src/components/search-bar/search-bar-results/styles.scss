@@ -1,0 +1,73 @@
+#dropdown-results {
+    width: 100%;
+
+    .result-header {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        justify-content: space-between;
+
+        &.tracks {
+            border-bottom: 3px solid #ffc300;
+
+            span {
+                padding: 2px 20px;
+                background-color: #ffc300;
+            }
+        }
+
+        &.artists {
+            border-bottom: 3px solid #3366d4;
+
+            span {
+                color: #fff;
+                padding: 2px 20px;
+                background-color: #3366d4;
+            }
+        }
+
+        &.albums {
+            border-bottom: 3px solid #c43410;
+
+            span {
+                color: #fff;
+                padding: 2px 20px;
+                background-color: #c43410;
+            }
+        }
+    }
+}
+
+.result-item {
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .05);
+    }
+    
+    .image-container {
+        width: 48px;
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .data-container {
+        display: flex;
+        margin-left: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            font-size: 18px;
+            font-weight: 900;
+        }
+    }
+}
