@@ -1,0 +1,132 @@
+.sidebar-template {
+    height: 100%;
+    overflow: hidden;
+    padding: 80px 20px 30px;
+
+    .header-info {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 170px;
+        }
+
+        .basic-info {
+            margin-left: 20px;
+
+            .title {
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .additional-info {
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .detailed-data {
+        margin-top: 10px;
+
+        .additional-info {
+            label {
+                font-weight: bold;
+            }
+
+            .btn {
+                height: 25px;
+                width: 170px;
+                display: flex;
+                font-size: 14px;
+                color: #3366d4;
+                padding-bottom: 2px;
+                border-radius: 24px;
+                align-items: center;
+                text-decoration: none;
+                justify-content: center;
+                background: url(../../../assets/icons/wikipedia.svg) no-repeat;
+                background-size: 16px;
+                background-color: #fff;
+                background-position: 30px center;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, .95);
+                }
+            }
+        }
+    }
+
+    .track-preview {
+        margin-top: 10px;
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+        }
+    }
+
+    .track-list,
+    .album-list {
+        height: 100%;
+        display: flex;
+        margin-top: 10px;
+        padding-bottom: 206px;
+        flex-direction: column;
+
+        .thumbnail {
+            width: 48px;
+            display: flex;
+            margin-right: 10px;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .list {
+            overflow: auto;
+
+            .track-item {
+                display: flex;
+                padding: 5px 0;
+                margin-bottom: 5px;
+                align-items: center;
+                justify-content: space-between;
+
+                div:first-child {
+                    padding-right: 20px;
+                }
+            }
+
+            .album-item {
+                display: flex;
+                padding: 5px 0;
+                margin-bottom: 10px;
+                align-items: center;
+
+                small {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
