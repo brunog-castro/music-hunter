@@ -22,7 +22,14 @@ export default class AuthService {
             config
         ).then(async (response) => {
             const result = await response.json();
-            return result.error ? null : result.access_token;
+            if (result.error) {
+                throw new Error(
+                    "Couldn't authenticate with Spotify's API. " +
+                    "Please, refresh the page and try again"
+                );
+            }
+            
+            return result.access_token;
         });
 
         if (!accessToken)
