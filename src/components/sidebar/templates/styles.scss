@@ -134,7 +134,7 @@
 @media (max-width: 540px) {
     .sidebar-template {
         width: 100%;
-        padding-top: 150px;
+        padding: 150px 10px 30px 20px;
 
         .header-info {
             padding-right: 25px;
@@ -159,6 +159,10 @@
         .track-list,
         .album-list {
             padding-bottom: 125px;
+
+            .list {
+                padding-right: 10px;
+            }
         }
     }
 }

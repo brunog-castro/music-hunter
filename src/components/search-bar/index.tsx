@@ -76,8 +76,8 @@ export default function SearchBar() {
             return;
         }
 
-        //setLoading(true);
         setShowDropdown(true);
+        console.log("debouncedFilter", "dropdown true");
        SearchService.search(text)
         .then(results => {
             setTrackResults(results.tracks);
@@ -91,7 +91,6 @@ export default function SearchBar() {
             !barRef.current.contains(event.target) &&
             showDropdown
         ) {
-            //setLoading(false);
             setShowDropdown(false);
         }
 
@@ -99,7 +98,6 @@ export default function SearchBar() {
             !typesRef.current.contains(event.target) &&
             showTypesDropdown
         ) {
-            //setLoading(false);
             setShowTypesDropdown(false);
         }
     };
@@ -114,7 +112,6 @@ export default function SearchBar() {
 
     const onSubmit = (event?: any) => {
         event?.preventDefault();
-        //setLoading(false);
         setShowDropdown(false);
 
         const url = `/search?query=${query}&type=${selectedType}`;     

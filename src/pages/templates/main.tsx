@@ -1,4 +1,5 @@
 import Sidebar from '../../components/sidebar';
+
 import './styles.scss';
 
 interface TypeProps {

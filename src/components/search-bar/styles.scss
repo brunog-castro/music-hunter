@@ -197,5 +197,13 @@
                 }
             }
         }
+
+        .dropdown-container {
+            max-height: calc(100vh - 230px);
+
+            .submit-btn {
+                margin-bottom: 0;
+            }
+        }
     }
 }
