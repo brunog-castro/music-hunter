@@ -1,0 +1,24 @@
+#home-page {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(../../assets/icons/spotify.svg) no-repeat center;
+
+    button {
+        background: url(../../assets/icons/shuffle.svg) no-repeat;
+        border: none;
+        cursor: pointer;
+        appearance: none;
+        border-radius: 24px;
+        margin-bottom: 20px;
+        padding: 11px 50px 10px;
+        background-size: 16px;
+        background-position: 22px center;
+        background-color: rgb(240, 240, 240);
+
+        &:hover {
+            background-color: rgba(240, 240, 240, .8);
+        }
+    }
+}
