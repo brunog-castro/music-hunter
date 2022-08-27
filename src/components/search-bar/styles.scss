@@ -92,14 +92,14 @@
         }
 
         .available-types {
+            border: 2px solid #333;
             top: 45px;
             width: 100%;
             overflow: hidden;
+            border-top: none;
             position: absolute;
             padding-bottom: 10px;
             box-sizing: content-box;
-            border: 2px solid #333;
-            border-top: none;
             background-color: #ffc300;
             border-bottom-left-radius: 24px;
             border-bottom-right-radius: 24px;

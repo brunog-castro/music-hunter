@@ -1,7 +1,7 @@
 import { Track } from "../../../models/track/track";
+import { millisecondsToString } from "../../../utils/timeConverter";
 
 import musicIcon from "../../../assets/icons/music.svg";
-import { millisecondsToString } from "../../../utils/timeConverter";
 
 import "./styles.scss";
 

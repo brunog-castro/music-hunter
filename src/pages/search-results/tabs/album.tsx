@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Loader from "../../../components/loader";
 import { Album } from "../../../models/album/album";
 import Paginator from "../../../components/paginator";
 import { useSidebar } from "../../../stores/sidebarStore";
@@ -7,7 +8,6 @@ import SearchService, { SearchInOptions } from "../../../services/search-service
 import SearchBarResultsItem from "../../../components/search-bar/search-bar-results/item";
 
 import "./styles.scss";
-import Loader from "../../../components/loader";
 
 interface PropTypes {
     searchTerm: string;

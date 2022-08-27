@@ -1,6 +1,6 @@
-import AlbumService from '../../services/album-service';
-import { useSidebar } from '../../stores/sidebarStore';
 import MainTemplate from '../templates/main';
+import { useSidebar } from '../../stores/sidebarStore';
+import AlbumService from '../../services/album-service';
 
 import "./styles.scss";
 

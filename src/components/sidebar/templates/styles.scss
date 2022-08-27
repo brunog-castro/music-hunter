@@ -39,6 +39,7 @@
             }
 
             .btn {
+                background: url(../../../assets/icons/wikipedia.svg) no-repeat;
                 height: 25px;
                 width: 170px;
                 display: flex;
@@ -48,9 +49,8 @@
                 border-radius: 24px;
                 align-items: center;
                 text-decoration: none;
-                justify-content: center;
-                background: url(../../../assets/icons/wikipedia.svg) no-repeat;
                 background-size: 16px;
+                justify-content: center;
                 background-color: #fff;
                 background-position: 30px center;
 
