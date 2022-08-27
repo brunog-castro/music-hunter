@@ -2,7 +2,7 @@ const storageKey = "@music-hunter-at";
 
 class UserStorage { 
     static hasToken = ():boolean => { 
-        var token = localStorage.getItem(storageKey);
+        const token = localStorage.getItem(storageKey);
         return !!token;
     };
 

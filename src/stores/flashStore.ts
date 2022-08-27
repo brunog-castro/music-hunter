@@ -23,7 +23,7 @@ const stateWrapper = (state: any) => ({
         });
     },
     close: () => {
-        var el = document.getElementById("flash-message");
+        const el = document.getElementById("flash-message");
         el?.classList.add("closing");
         setTimeout(() => {
             state?.set((p: FlashOptions) => {
