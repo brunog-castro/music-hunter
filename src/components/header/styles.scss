@@ -1,0 +1,23 @@
+#header {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    position: relative;
+
+    .logo {
+        display: flex;
+        color: #333;
+        align-items: center;
+        text-decoration: none;
+
+        img {
+            width: 48px;
+        }
+
+        span {
+            font-size: 22px;
+            font-weight: 900;
+            margin-left: 5px;
+        }
+    }
+}
