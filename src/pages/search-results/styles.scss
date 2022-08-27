@@ -1,0 +1,71 @@
+#search-page {
+    height: 100%;
+    overflow: hidden;
+    min-height: 655px;
+    position: relative;
+    padding: 50px 170px 0 50px;
+
+    .tabs {
+        top: 50px;
+        right: 50px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+
+        button {
+            opacity: .6;
+            width: 120px;
+            border: none;
+            height: 200px;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            appearance: none;
+
+            &:hover:not(.active) {
+                opacity: .7;
+            }
+
+            &.active {
+                opacity: 1;
+                font-weight: bold;
+
+                &.track {
+                    background-image: url(../../assets/icons/music-note.svg);
+                }
+    
+                &.artist {
+                    background-image: url(../../assets/icons/mic.svg);
+                }
+    
+                &.album {
+                    background-image: url(../../assets/icons/disc.svg);
+                }
+            }
+
+            &.track {
+                background: url(../../assets/icons/music-note.svg) no-repeat center;
+                background-size: 80%;
+                background-color: #ffc300;
+            }
+
+            &.artist {
+                background: url(../../assets/icons/mic.svg) no-repeat center;
+                color: #fff;
+                background-size: 70%;
+                background-color: #3366d4;
+            }
+
+            &.album {
+                background: url(../../assets/icons/disc.svg) no-repeat center;
+                color: #fff;
+                background-size: 70%;
+                background-color: #c43410;
+            }
+        }
+    }
+
+    .tab-content {
+        height: 100%;
+    }
+}

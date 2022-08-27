@@ -1,0 +1,75 @@
+#tracks-tab {
+    background-color: #ffc300;
+}
+
+#artists-tab {
+    background-color: #3366d4;
+
+    .result-header {
+        .title {
+            color: rgba(255, 255, 255, .3);
+        }
+
+        .subtext {
+            color: rgba(255, 255, 255, .6);
+        }
+    }
+
+    .result-item {
+        color: #fff;
+    }
+}
+
+#albums-tab {
+    background-color: #c43410;
+
+    .result-header {
+        .title {
+            color: rgba(255, 255, 255, .3);
+        }
+
+        .subtext {
+            color: rgba(255, 255, 255, .6);
+        }
+    }
+
+    .result-item {
+        color: #fff;
+    }
+}
+
+.tab {
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    overflow: auto;
+    position: relative;
+    flex-direction: column;
+
+    .result-header {
+        top: 20px;
+        right: 70px;
+        text-align: right;
+        user-select: none;
+        position: absolute;
+        pointer-events: none;
+
+        .title {
+            font-size: 98px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .subtext {
+            margin-top: -10px;
+            margin-right: 5px;
+            font-size: 18px;
+            color: rgba(0, 0, 0, .6);
+        }
+    }
+
+    .list {
+        overflow: auto;
+        height: calc(100% - 40px);
+    }
+}
