@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from '../components/header';
+import Loader from '../components/loader';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const Home = lazy(() => import('./home'));
 const SearchResults = lazy(() => import('./search-results'));
@@ -8,7 +9,7 @@ const SearchResults = lazy(() => import('./search-results'));
 const Router = () => (
     <BrowserRouter>
         <Header />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/search" element={<SearchResults />} />

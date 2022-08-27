@@ -1,3 +1,4 @@
+import Loader from "../loader";
 import TrackSidebar from "./templates/track";
 import AlbumSidebar from "./templates/album";
 import ArtistSidebar from "./templates/artist";
@@ -51,7 +52,7 @@ export default function Sidebar() {
                     }
                 </>
                 :
-                    <div>loading...</div>
+                    <Loader />
                 }
             </div>
         </div>

@@ -5,25 +5,32 @@
     position: relative;
 
     .logo {
-        display: flex;
+        background: url(../../assets/logo.png) no-repeat;
+        height: 48px;
+        width: 176px;
         color: #333;
+        display: flex;
         align-items: center;
         text-decoration: none;
-
-        img {
-            width: 48px;
-        }
+        background-size: 48px;
+        background-position: left center;
 
         span {
             font-size: 22px;
             font-weight: 900;
-            margin-left: 5px;
+            margin-left: 53px;
         }
     }
 }
 
 @media (max-width: 540px) {
     #header {
+        z-index: 1;
         justify-content: center;
+
+        .logo.inverted {
+            color: #fff;
+            background-image: url(../../assets/logo-inverted.png);
+        }
     }
 }

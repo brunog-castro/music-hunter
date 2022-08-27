@@ -82,7 +82,9 @@
             flex-direction: row;
 
             button {
-                width: 110px;
+                flex: 1;
+                margin: 0;
+                width: auto;
                 height: 60px;
                 display: flex;
                 align-items: flex-end;
