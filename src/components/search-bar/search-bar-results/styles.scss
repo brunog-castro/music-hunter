@@ -71,3 +71,11 @@
         }
     }
 }
+
+@media (max-width: 540px) {
+    .result-item {
+        .image-container {
+            min-width: 48px;
+        }
+    }
+}

@@ -170,3 +170,25 @@
         }
     }
 }
+
+@media (max-width: 540px) {
+    #search-container {
+        top: 30px;
+        width: 90%;
+
+        .type-selector {
+            .selected-type {
+                small {
+                    display: none;
+                }
+            }
+
+            .available-types {
+                div {
+                    padding: 10px 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
