@@ -28,11 +28,13 @@ export default class AlbumService {
         )
             .then(async (response: any) => {
                 const result = await response.json();
-                if (result.error?.status === 401) {
-                    if (await AuthService.init())
+                if (result.error) {
+                    if (result.error.status === 401) {
+                        await AuthService.init();
                         return AlbumService.getAlbum(id);
-                    else
-                        throw new Error("Invalid response");
+                    } else {
+                        throw new Error("Unknown error");
+                    }
                 }
 
                 return result;
@@ -56,11 +58,13 @@ export default class AlbumService {
         )
             .then(async (response: any) => {
                 const result = await response.json();
-                if (result.error?.status === 401) {
-                    if (await AuthService.init())
+                if (result.error) {
+                    if (result.error.status === 401) {
+                        await AuthService.init();
                         return AlbumService.getAlbumsFrom(artistId);
-                    else
-                        throw new Error("Invalid response");
+                    } else {
+                        throw new Error("Unknown error");
+                    }
                 }
 
                 return result;

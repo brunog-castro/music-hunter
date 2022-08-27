@@ -44,11 +44,18 @@ export default class SearchService {
         )
             .then(async (response: any) => {
                 const result = await response.json();
-                if (result.error?.status === 401) {
-                    if (await AuthService.init())
+                if (result.error) {
+                    if (result.error.status === 401) {
+                        await AuthService.init();
                         return SearchService.search(query, searchIn);
-                    else
-                        throw new Error("Invalid response");
+                    } else if (result.error.status === 429) {
+                        throw new Error(
+                            "Whoa, go easy hot fingers, " + 
+                            "the API can't handle too many requests"
+                        );
+                    } else {
+                        throw new Error("Unknown error");
+                    }
                 }
 
                 return result;
