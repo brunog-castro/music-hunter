@@ -7,6 +7,7 @@ import SearchService, { SearchInOptions } from "../../../services/search-service
 import SearchBarResultsItem from "../../../components/search-bar/search-bar-results/item";
 
 import "./styles.scss";
+import Loader from "../../../components/loader";
 
 interface PropTypes {
     searchTerm: string;
@@ -52,13 +53,13 @@ export default function AlbumTab(props: PropTypes) {
                 </div>
             </div>
         {loading && !albums ? 
-            <div>loading...</div>
+            <Loader inverted />
         :
             (!albums || albums.items.length < 0 ?
                 <div>No results found</div>
                 :
                 <>
-                {loading && <div>loading...</div>}
+                {loading && <Loader className="inner-loader" inverted />}
                 <div className="list albums">
                     {albums.items.map(album =>
                         <SearchBarResultsItem

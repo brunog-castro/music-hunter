@@ -7,6 +7,7 @@ import SearchService, { SearchInOptions } from "../../../services/search-service
 import SearchBarResultsItem from "../../../components/search-bar/search-bar-results/item";
 
 import "./styles.scss";
+import Loader from "../../../components/loader";
 
 interface PropTypes {
     searchTerm: string;
@@ -52,13 +53,13 @@ export default function TracksTab(props: PropTypes) {
                 </div>
             </div>
         {loading && !tracks ? 
-            <div>loading...</div>
+            <Loader />
         :
             (!tracks || tracks.items.length < 0 ?
                 <div>No results found</div>
                 :
                 <>
-                {loading && <div>loading...</div>}
+                {loading && <Loader className="inner-loader" />}
                 <div className="list tracks">
                     {tracks.items.map(track =>
                         <SearchBarResultsItem
