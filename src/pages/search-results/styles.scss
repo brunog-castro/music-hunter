@@ -69,3 +69,35 @@
         height: 100%;
     }
 }
+
+@media (max-width: 540px) {
+    #search-page {
+        min-height: auto;
+        padding: 80px 5% 0;
+
+        .tabs {
+            top: auto;
+            right: auto;
+            position: relative;
+            flex-direction: row;
+
+            button {
+                width: 110px;
+                height: 60px;
+                background-size: 50%;
+
+                &.track {
+                    background-size: 32px;
+                }
+    
+                &.artist {
+                    background-size: 32px;
+                }
+    
+                &.album {
+                    background-size: 32px;
+                }
+            }
+        }
+    }
+}

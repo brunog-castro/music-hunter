@@ -59,7 +59,7 @@ export default function ArtistTab(props: PropTypes) {
                 :
                 <>
                 {loading && <div>loading...</div>}
-                <div className="list albums">
+                <div className="list artists">
                     {artists.items.map(artist =>
                         <SearchBarResultsItem
                             key={artist.id}

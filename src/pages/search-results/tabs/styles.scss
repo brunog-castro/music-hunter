@@ -61,9 +61,9 @@
         }
 
         .subtext {
+            font-size: 18px;
             margin-top: -10px;
             margin-right: 5px;
-            font-size: 18px;
             color: rgba(0, 0, 0, .6);
         }
     }
@@ -71,5 +71,49 @@
     .list {
         overflow: auto;
         height: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 540px) {
+    .tab {
+        padding: 10px;
+        padding-right: 5px;
+
+        .result-header {
+            top: 0px;
+            right: 20px;
+            text-align: right;
+            user-select: none;
+            position: absolute;
+            pointer-events: none;
+    
+            .title {
+                font-size: 68px;
+                color: rgba(0, 0, 0, .1);
+            }
+    
+            .subtext {
+                font-size: 16px;
+                margin-top: -10px;
+                margin-right: 5px;
+                color: rgba(0, 0, 0, .4);
+            }
+        }
+
+        .list {
+            height: calc(100% - 40px);
+
+            &.artists {
+                .data-container {
+                    .title {
+                        font-size: 22px;
+                    }
+
+                    .subtitle {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

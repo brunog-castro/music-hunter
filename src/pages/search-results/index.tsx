@@ -22,6 +22,7 @@ export default function SearchResultsPage() {
             setSelectedTab("track");
         else
             setSelectedTab(queryType);
+        //eslint-disable-next-line
     }, [searchParams]);
 
     const updateParamsFor = (type: string) => {
@@ -40,7 +41,9 @@ export default function SearchResultsPage() {
                             "track" +
                             (selectedTab === "track" ? " active" : "")
                         }
-                    />
+                    >
+                        <span>Tracks</span>
+                    </button>
                     <button
                         title="Artists"
                         onClick={() => updateParamsFor("artist")}
@@ -48,7 +51,9 @@ export default function SearchResultsPage() {
                             "artist" +
                             (selectedTab === "artist" ? " active" : "")
                         }
-                    />
+                    >
+                        <span>Artists</span>
+                    </button>
                     <button
                         title="Albums"
                         onClick={() => updateParamsFor("album")}
@@ -56,7 +61,9 @@ export default function SearchResultsPage() {
                             "album" +
                             (selectedTab === "album" ? " active" : "")
                         }
-                    />
+                    >
+                        <span>Albums</span>
+                    </button>
                 </div>
                 <div className="tab-content">
                     {selectedTab === "album" && <AlbumTab searchTerm={query} />}
