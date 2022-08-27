@@ -3,6 +3,10 @@
 
     .body {
         height: 100%;
+
+        .mobile-only {
+            display: none;
+        }
     }
 
     ::-webkit-scrollbar {
@@ -47,6 +51,12 @@
 }
 
 @media (max-width: 540px) {
+    .desktop-only {
+        display: none;
+    }
 
+    .mobile-only {
+        display: block;
+    }
 }
 
