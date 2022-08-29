@@ -196,10 +196,10 @@ export default function SearchBar() {
     };
 
     const onSubmit = (event?: any) => {
+        event?.preventDefault();
         if (!query)
             return;
 
-        event?.preventDefault();
         setShowDropdown(false);
 
         const url = `/search?query=${query}&type=${selectedType}`;     
