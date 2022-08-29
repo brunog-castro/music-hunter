@@ -23,7 +23,7 @@ export default function Paginator(props: PropTypes) {
 
         let endIndex = startIndex + pageIndexesVisible;
         endIndex = endIndex > totalPages ? totalPages : endIndex;
-        for (let i = startIndex; i <= endIndex; i++) {
+        for (let i = startIndex; i < endIndex; i++) {
             pagination.push(
                 <button
                     key={i}
@@ -59,7 +59,7 @@ export default function Paginator(props: PropTypes) {
                 {renderPageButtons()}
                 <button
                     className="next paginate-button"
-                    disabled={props.currentPage >= totalPages}
+                    disabled={props.currentPage >= totalPages - 1}
                     onClick={() => props.onChange(props.currentPage + 1)}
                 >
                     <span className="desktop-only">NEXT</span> {">>"}
