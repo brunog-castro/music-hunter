@@ -196,6 +196,9 @@ export default function SearchBar() {
     };
 
     const onSubmit = (event?: any) => {
+        if (!query)
+            return;
+
         event?.preventDefault();
         setShowDropdown(false);
 
